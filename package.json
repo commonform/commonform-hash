@@ -5,7 +5,7 @@
     "url": "http://kemitchell.com/"
   },
   "bugs": {
-    "url": "https://github.com/commonform/commonform-hashing/issues"
+    "url": "https://github.com/commonform/commonform-hash/issues"
   },
   "dependencies": {
     "commonform-serialization": "commonform/commonform-serialization#0.0.1"
@@ -19,7 +19,7 @@
     "mocha": "^2.1.0",
     "semver": "^4.2.0"
   },
-  "homepage": "https://github.com/commonform/commonform-hashing",
+  "homepage": "https://github.com/commonform/commonform-hash",
   "keywords": [
     "contracts",
     "document assembly",
@@ -27,11 +27,11 @@
     "law"
   ],
   "license": "Apache-2.0",
-  "main": "commonform-hashing.js",
-  "name": "commonform-hashing",
+  "main": "commonform-hash.js",
+  "name": "commonform-hash",
   "repository": {
     "type": "git",
-    "url": "https://github.com/commonform/commonform-hashing.git"
+    "url": "https://github.com/commonform/commonform-hash.git"
   },
   "scripts": {
     "pre-commit": "npm run lint && npm run coverage",

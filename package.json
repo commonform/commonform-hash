@@ -28,6 +28,7 @@
     "law"
   ],
   "license": "Apache-2.0",
+  "main": "source/index",
   "name": "commonform-hash",
   "repository": {
     "type": "git",

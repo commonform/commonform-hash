@@ -13,3 +13,5 @@ exports.isDigest = (function() {
     return typeof input === 'string' && DIGEST_RE.test(input);
   };
 })();
+
+exports.version = '0.0.1';

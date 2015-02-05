@@ -8,7 +8,7 @@
     "url": "https://github.com/commonform/commonform-hash/issues"
   },
   "dependencies": {
-    "commonform-serialization": "commonform/commonform-serialization#0.0.1"
+    "commonform-serialize": "commonform/commonform-serialize"
   },
   "description": "Common Form content-address hashing",
   "devDependencies": {
@@ -27,7 +27,6 @@
     "law"
   ],
   "license": "Apache-2.0",
-  "main": "commonform-hash.js",
   "name": "commonform-hash",
   "repository": {
     "type": "git",

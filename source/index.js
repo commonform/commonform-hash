@@ -1,10 +1,8 @@
-var crypto = require('crypto');
+var sha256 = require('sha256');
 var serialize = require('commonform-serialize');
 
 exports.hash = function(argument) {
-  return crypto.createHash('sha256')
-    .update(serialize.stringify(argument), 'ascii')
-    .digest('hex');
+  return sha256(serialize.stringify(argument));
 };
 
 exports.isDigest = (function() {

@@ -8,7 +8,8 @@
     "url": "https://github.com/commonform/commonform-hash/issues"
   },
   "dependencies": {
-    "commonform-serialize": "0.1.x"
+    "commonform-serialize": "0.1.x",
+    "sha256": "^0.1.1"
   },
   "description": "Common Form content-address hashing",
   "devDependencies": {

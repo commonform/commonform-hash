@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "commonform-serialize": "0.1.x",
-    "sha256": "^0.1.1"
+    "sha256": "kemitchell/sha256"
   },
   "devDependencies": {
     "chai": "^1.10.0",

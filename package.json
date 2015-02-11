@@ -1,7 +1,7 @@
 {
   "name": "commonform-hash",
   "description": "Common Form content-address hashing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Kyle E. Mitchell",
     "email": "kyle@kemitchell.com",

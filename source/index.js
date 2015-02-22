@@ -5,4 +5,4 @@ module.exports = function(argument) {
   return sha256(serialize.stringify(argument));
 };
 
-module.exports.version = '0.2.0';
+module.exports.version = '0.3.0';

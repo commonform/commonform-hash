@@ -9,13 +9,10 @@
     "sha256": "^0.2.0"
   },
   "devDependencies": {
-    "chai": "^2.2.0",
-    "check-versions": "1.x",
-    "istanbul": "^0.3.5",
+    "covert": "1.1.0",
     "jscs": "^1.10.0",
     "jshint": "^2.6.0",
-    "mocha": "^2.1.0",
-    "semver": "^4.2.0"
+    "tape": "4.0.0"
   },
   "homepage": "https://commonform.github.io",
   "keywords": [
@@ -30,11 +27,9 @@
   "main": "source/index",
   "repository": "commonform/commonform-hash",
   "scripts": {
-    "check": "check-versions --check-module",
-    "coverage": "istanbul check-coverage --config .dotfiles/istanbul.yml coverage/coverage.json",
-    "lint": "jshint --config .dotfiles/jshint.json source test && jscs --config .dotfiles/jscs.json source test",
-    "precommit": "npm run check && npm run lint && npm run coverage",
-    "precoverage": "istanbul cover --config .dotfiles/istanbul.yml -- _mocha --opts .dotfiles/mocha.opts",
-    "test": "mocha --opts .dotfiles/mocha.opts"
+    "coverage": "covert test/*.test.js",
+    "lint": "jshint source test && jscs source test",
+    "precommit": "npm run lint && npm run coverage",
+    "test": "tape test/*.test.js"
   }
 }

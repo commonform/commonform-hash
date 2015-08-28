@@ -22,7 +22,6 @@
     "law"
   ],
   "license": "Apache-2.0",
-  "main": "source/index",
   "repository": "commonform/commonform-hash",
   "scripts": {
     "coverage": "covert test/*.test.js",

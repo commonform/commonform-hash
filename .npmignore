@@ -1,8 +1,4 @@
-*.tgz
-.editorconfig
 .gitignore
-.jscsrc
-.jshintrc
 .npmignore
 .travis.yml
 test/

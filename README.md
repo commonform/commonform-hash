@@ -4,16 +4,16 @@ var assert = require('assert')
 
 assert.equal(
   hash({content: ['This is a form.']}),
-  '0cb94c21d8e303ae4785e9433afe33132b4fe76275ae96d9b2d0b10a6fdf716a'
+  'ydf3joo7taadi3dam4kd8m9dgr3mj9usr7pq15c5fwftbjz76hmk'
 )
 
 assert.equal(
   hash({conspicuous: 'yes', content: ['This is a form.']}),
-  '76b69d4004186e35b26fb816835a92de5cfa8b1e553e45516b878bb3d35187d5'
+  'y7isuiyyegdqgs3g9qysoppjfz1h9kfthij6eieszbhmsxjidb6i'
 )
 
 assert.equal(
   hash({content: ['This is a form.'], conspicuous: 'yes'}),
-  '76b69d4004186e35b26fb816835a92de5cfa8b1e553e45516b878bb3d35187d5'
+  'y7isuiyyegdqgs3g9qysoppjfz1h9kfthij6eieszbhmsxjidb6i'
 )
 ```

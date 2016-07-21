@@ -3,10 +3,11 @@
   "description": "hash Common Forms",
   "version": "0.4.2",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
+  "browserify": "browser.js",
   "bugs": "https://github.com/commonform/commonform-hash/issues",
   "dependencies": {
     "commonform-serialize": "^0.4.0",
-    "sha256": "^0.2.0"
+    "sha.js": "^2.4.5"
   },
   "devDependencies": {
     "defence-cli": "~1.0.1",
@@ -23,9 +24,10 @@
     "law"
   ],
   "license": "Apache-2.0",
+  "main": "node.js",
   "repository": "commonform/commonform-hash",
   "scripts": {
-    "test": "defence README.md | replace-require-self | node",
-    "lint": "standard"
+    "lint": "standard",
+    "test": "defence README.md | replace-require-self | node"
   }
 }

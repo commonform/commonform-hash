@@ -14,6 +14,12 @@
     "replace-require-self": "~1.0.0",
     "standard": "^7.1.2"
   },
+  "files": [
+    "NOTICE",
+    "index.js",
+    "common.js",
+    "browser.js"
+  ],
   "homepage": "https://commonform.github.io",
   "keywords": [
     "contracts",

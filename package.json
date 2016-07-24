@@ -10,6 +10,7 @@
     "sha.js": "^2.4.5"
   },
   "devDependencies": {
+    "browserify": "^13.0.1",
     "defence-cli": "~1.0.1",
     "replace-require-self": "~1.0.0",
     "standard": "^7.1.2"
@@ -34,6 +35,8 @@
   "repository": "commonform/commonform-hash",
   "scripts": {
     "lint": "standard",
-    "test": "defence README.md | replace-require-self | node"
+    "test": "npm run test:node && npm run test:browserify",
+    "test:node": "defence README.md | replace-require-self | node",
+    "test:browserify": "defence README.md | replace-require-self | browserify - | node"
   }
 }

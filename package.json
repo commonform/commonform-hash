@@ -5,6 +5,7 @@
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
   "browserify": "browser.js",
   "bugs": "https://github.com/commonform/commonform-hash/issues",
+  "bin": "bin.js",
   "dependencies": {
     "commonform-serialize": "^0.4.0",
     "sha.js": "^2.4.5"
@@ -17,6 +18,7 @@
   },
   "files": [
     "NOTICE",
+    "bin.js",
     "index.js",
     "common.js",
     "browser.js"

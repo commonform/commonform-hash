@@ -3,8 +3,24 @@
   "description": "hash Common Forms",
   "version": "0.5.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
-  "bugs": "https://github.com/commonform/commonform-hash/issues",
+  "repository": "commonform/commonform-hash",
+  "main": "node.js",
+  "browserify": "browser.js",
   "bin": "bin.js",
+  "files": [
+    "bin.js",
+    "browser.js",
+    "common.js",
+    "node.js"
+  ],
+  "keywords": [
+    "contracts",
+    "digest",
+    "document assembly",
+    "hash",
+    "knowledge management",
+    "law"
+  ],
   "dependencies": {
     "commonform-serialize": "^0.4.0",
     "sha.js": "^2.4.5"
@@ -15,25 +31,7 @@
     "replace-require-self": "~1.0.0",
     "standard": "^7.1.2"
   },
-  "main": "node.js",
-  "browserify": "browser.js",
-  "files": [
-    "bin.js",
-    "browser.js",
-    "common.js",
-    "node.js"
-  ],
-  "homepage": "https://commonform.github.io",
-  "keywords": [
-    "contracts",
-    "digest",
-    "document assembly",
-    "hash",
-    "knowledge management",
-    "law"
-  ],
   "license": "BlueOak-1.0.0",
-  "repository": "commonform/commonform-hash",
   "scripts": {
     "lint": "standard",
     "test": "npm run test:node && npm run test:browserify",

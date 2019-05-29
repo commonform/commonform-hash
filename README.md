@@ -1,3 +1,7 @@
+# commonform-hash
+
+hash Common Forms
+
 ```javascript
 var hash = require('commonform-hash')
 var assert = require('assert')

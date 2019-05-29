@@ -3,7 +3,6 @@
   "description": "hash Common Forms",
   "version": "0.5.0",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
-  "browserify": "browser.js",
   "bugs": "https://github.com/commonform/commonform-hash/issues",
   "bin": "bin.js",
   "dependencies": {
@@ -16,12 +15,13 @@
     "replace-require-self": "~1.0.0",
     "standard": "^7.1.2"
   },
+  "main": "node.js",
+  "browserify": "browser.js",
   "files": [
-    "NOTICE",
     "bin.js",
-    "index.js",
+    "browser.js",
     "common.js",
-    "browser.js"
+    "node.js"
   ],
   "homepage": "https://commonform.github.io",
   "keywords": [
@@ -33,7 +33,6 @@
     "law"
   ],
   "license": "BlueOak-1.0.0",
-  "main": "node.js",
   "repository": "commonform/commonform-hash",
   "scripts": {
     "lint": "standard",

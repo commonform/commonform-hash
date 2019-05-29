@@ -1,6 +1,6 @@
 # commonform-hash
 
-hash Common Forms
+cryptographically hash Common Forms
 
 ```javascript
 var hash = require('commonform-hash')

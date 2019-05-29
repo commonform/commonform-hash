@@ -2,6 +2,8 @@
 
 cryptographically hash Common Forms
 
+This package wraps different implementations of SHA-256, one for the browser, via [browserify](http://browserify.org/), and the other for Node.js, via the [core `crypto` module](https://nodejs.org/api/crypto.html).
+
 ```javascript
 var hash = require('commonform-hash')
 var assert = require('assert')

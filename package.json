@@ -21,7 +21,7 @@
     "sha.js": "^2.4.5"
   },
   "devDependencies": {
-    "browserify": "^16.2.3",
+    "browserify": "^17.0.0",
     "defence-cli": "^3.0.1",
     "replace-require-self": "^1.1.1",
     "standard": "^13.0.2"

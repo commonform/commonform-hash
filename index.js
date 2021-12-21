@@ -1,8 +1,8 @@
-var shajs = require('sha.js')
+var SHA256 = require('sha.js/sha256')
 var serialize = require('commonform-serialize')
 
 module.exports = function (argument) {
-  return shajs('sha256')
+  return new SHA256()
     .update(serialize.stringify(argument))
     .digest('hex')
 }

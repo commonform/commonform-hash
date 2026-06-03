@@ -1,8 +1,9 @@
-var SHA256 = require('sha.js/sha256')
-var serialize = require('commonform-serialize')
+import { sha256 } from '@noble/hashes/sha2.js'
+import serialize from 'commonform-serialize'
 
-module.exports = function (argument) {
-  return new SHA256()
-    .update(serialize.stringify(argument))
-    .digest('hex')
+export default function (argument) {
+  return sha256.create()
+    .update(new TextEncoder().encode(serialize.stringify(argument)))
+    .digest()
+    .toHex()
 }

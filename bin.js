@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-var buffer = []
+import hash from './index.js'
+const buffer = []
 process.stdin
   .on('data', function (chunk) {
     buffer.push(chunk)
@@ -16,5 +17,5 @@ process.stdin
       console.error(error)
       process.exit(1)
     }
-    console.log(require('./')(parsed))
+    console.log(hash(parsed))
   })

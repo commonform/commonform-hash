@@ -4,10 +4,10 @@
   "version": "1.0.2",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com)",
   "repository": "commonform/commonform-hash",
+  "type": "module",
+  "main": "index.js",
   "bin": "bin.js",
-  "files": [
-    "index.js"
-  ],
+  "files": [],
   "keywords": [
     "contracts",
     "digest",
@@ -17,20 +17,14 @@
     "law"
   ],
   "dependencies": {
-    "commonform-serialize": "^1.0.0",
-    "sha.js": "^2.4.12"
+    "@noble/hashes": "^2.4.0",
+    "commonform-serialize": "^2.0.0"
   },
   "devDependencies": {
-    "browserify": "^17.0.0",
-    "defence-cli": "^3.0.1",
-    "replace-require-self": "^1.1.1",
-    "standard": "^13.0.2"
+    "defence-cli": "^3.0.1"
   },
   "license": "BlueOak-1.0.0",
   "scripts": {
-    "lint": "standard",
-    "test": "npm run test:node && npm run test:browserify",
-    "test:node": "defence README.md | replace-require-self | node",
-    "test:browserify": "defence README.md | replace-require-self | browserify - | node"
+    "test": "defence -i javascript README.md | sed \"s!from 'commonform-hash'!from './index.js'!\" | node"
   }
 }
